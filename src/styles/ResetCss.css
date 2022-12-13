@@ -107,6 +107,9 @@ section {
 }
 body {
   line-height: 1;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 ol,
 ul {

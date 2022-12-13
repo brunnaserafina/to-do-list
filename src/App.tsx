@@ -1,22 +1,34 @@
+import React from "react";
 import styled from "styled-components";
-import "../src/ResetCss.css";
+import ToDoList from "./components/ToDoList";
+import "../src/styles/ResetCss.css";
 
 export default function App() {
   return (
     <Container>
-      <Header />
+      <h1>To-Do List</h1>
+      <ToDoList />
     </Container>
   );
 }
 
-const Container = styled.div`
-  text-align: center;
-  background: linear-gradient(to right, #4568dc, #b06ab3);
+const Container = styled.main`
+  width: 100vw;
   height: 100vh;
-`;
+  background: linear-gradient(
+    0deg,
+    rgba(212, 48, 252, 1) 0%,
+    rgba(194, 143, 0, 1) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  padding-top: 8vw;
+  align-items: center;
+  box-sizing: border-box;
 
-const Header = styled.div`
-  height: 50px;
-  width: 100%;
-  background: #0052d4;
+  h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
 `;
